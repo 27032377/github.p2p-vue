@@ -1,15 +1,38 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+const Home = resolve => require(['@/pages/Home.vue'], resolve)
+const My = resolve => require(['@/pages/My.vue'], resolve)
 
 Vue.use(Router)
-
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+    meta: {
+      title: 'home'
     }
-  ]
+  },
+  {
+    path: '/My',
+    name: 'My',
+    component: My,
+    meta: {
+      title: 'my'
+    }
+  }
+]
+const router = new Router({
+  mode: 'history',
+  base: '/',
+  routes
 })
+router.afterEach((to, from) => {
+  if (to.meta.title) {
+    document.title = to.meta.title
+  } else {
+    document.title = 'P2P'
+  }
+})
+
+export default router
