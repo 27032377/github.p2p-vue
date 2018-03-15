@@ -7,8 +7,25 @@
 </template>
 
 <script>
+import { Indicator } from 'mint-ui'
+import { mapState } from 'vuex'
+
 export default {
-  name: 'App'
+  name: 'App',
+  watch: {
+    loading (bol) {
+      if (bol) {
+        Indicator.open('加载中...')
+      } else {
+        Indicator.close()
+      }
+    }
+  },
+  computed: {
+    ...mapState({
+      loading: state => state.loading
+    })
+  }
 }
 </script>
 
@@ -17,5 +34,8 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }
 </style>

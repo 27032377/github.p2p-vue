@@ -1,22 +1,14 @@
 <template>
-  <div>My.vue</div>
+  <div>
+    <p>My.vue</p>
+  </div>
 </template>
 <script>
-import {mapState} from 'vuex'
+import 'mint-ui/lib/style.css'
 
 export default {
   name: 'My',
-  computed: {
-    ...mapState({
-      loading: state => state.loading,
-      count: state => state.count,
-      num () {
-        return this.$store.getters.num
-      }
-    })
-  },
-  activated () {
-    console.log(this.loading, this.count, this.num)
-  }
+  activated () {},
+  methods: {}
 }
 </script>

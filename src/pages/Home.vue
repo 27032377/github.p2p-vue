@@ -14,6 +14,7 @@ export default {
   components: {
     Button
   },
+  activated () {},
   methods: {
     routeTo () {
       this.$router.push('/my')
