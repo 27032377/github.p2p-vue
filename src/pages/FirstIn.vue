@@ -4,6 +4,7 @@
       <mt-swipe-item v-for="(item, index) in imgList" :key="index">
         <img :src="item">
         <float-block @click.native="login"></float-block>
+        <swipe-btn v-show="index == imgList.length - 1" @click.native="login"></swipe-btn>
       </mt-swipe-item>
     </mt-swipe>
   </div>
@@ -17,12 +18,14 @@ import image04 from '@/assets/images/image/image04.jpg'
 import image05 from '@/assets/images/image/image05.jpg'
 import image06 from '@/assets/images/image/image06.jpg'
 import FloatBlock from '@/components/FloatBlock.vue'
+import SwipeBtn from '@/components/SwipeBtn.vue'
 
 export default {
   components: {
     Swipe,
     SwipeItem,
-    FloatBlock
+    FloatBlock,
+    SwipeBtn
   },
   data () {
     return {

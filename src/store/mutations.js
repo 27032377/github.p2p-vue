@@ -6,6 +6,9 @@ const mutations = {
   },
   [types.PAGE_HEIGHT] (state, payload) {
     state.scrollHeight = payload.num
+  },
+  [types.MY_TOAST] (state, payload) {
+    state.myToast = payload.obj
   }
 }
 

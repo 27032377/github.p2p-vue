@@ -12,6 +12,12 @@ const actions = {
       type: types.PAGE_HEIGHT,
       num: payload.num
     })
+  },
+  [types.MY_TOAST] ({commit}, payload) {
+    commit({
+      type: types.MY_TOAST,
+      obj: payload.obj
+    })
   }
 }
 

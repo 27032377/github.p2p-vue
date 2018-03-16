@@ -8,7 +8,12 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     loading: false,
-    scrollHeight: 667
+    scrollHeight: 667,
+    myToast: {
+      show: false,
+      message: '加载中...',
+      position: 'middle'
+    }
   },
   getters: {},
   mutations,
