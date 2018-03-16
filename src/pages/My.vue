@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import 'mint-ui/lib/style.css'
+import 'mint-ui/lib/style.min.css'
 
 export default {
   name: 'My',

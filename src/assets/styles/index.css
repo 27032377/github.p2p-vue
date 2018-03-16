@@ -1,0 +1,20 @@
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width:320px) and (max-width:359.9px){ html{font-size:85px;} }
+@media screen and (min-width:360px) and (max-width:374.9px){ html{font-size:96px;} }
+@media screen and (min-width:375px) and (max-width:413.9px){ html{font-size:100px;} }
+@media screen and (min-width:414px) and (max-width:479.9px){ html{font-size:110px;} }
+@media screen and (min-width:480px) and (max-width:567.9px){ html{font-size:128px;} }
+@media screen and (min-width:568px) and (max-width:639.9px){ html{font-size:151px;} }
+@media screen and (min-width:640px){ html{font-size:170px;} }

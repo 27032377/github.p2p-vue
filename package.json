@@ -16,7 +16,9 @@
   "dependencies": {
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
+    "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
+    "px2rem-loader": "^0.1.7",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

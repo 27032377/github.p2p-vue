@@ -1,13 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from '../store'
+
 const Home = resolve => require(['@/pages/Home.vue'], resolve)
 const My = resolve => require(['@/pages/My.vue'], resolve)
+const FirstIn = resolve => require(['@/pages/FirstIn.vue'], resolve)
+const MiddlewarePage = resolve => require(['@/pages/MiddlewarePage.vue'], resolve)
 
 Vue.use(Router)
 const routes = [
   {
     path: '/',
+    name: 'MiddlewarePage',
+    component: MiddlewarePage
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home,
     meta: {
@@ -20,6 +28,14 @@ const routes = [
     component: My,
     meta: {
       title: 'my'
+    }
+  },
+  {
+    path: '/FirstIn',
+    name: 'FirstIn',
+    component: FirstIn,
+    meta: {
+      title: 'FirstIn'
     }
   }
 ]
