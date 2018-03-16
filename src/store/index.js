@@ -7,7 +7,8 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    loading: false
+    loading: false,
+    scrollHeight: 667
   },
   getters: {},
   mutations,

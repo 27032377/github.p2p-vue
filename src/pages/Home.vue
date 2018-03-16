@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p>Home.vue</p>
+    <h2>Home.vue</h2>
     <span class="lessTest"> xxx </span>
     <mt-button type="danger" @click="routeTo">按钮mint</mt-button>
   </div>

@@ -5,10 +5,144 @@ body {
   background: #fff;
   margin: 0;
   padding: 0;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html {
+  height: 100%;
 }
 #app {
   width: 100%;
   height: 100%;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pt20 {
+  padding-top:20px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+.w80 {
+  width: 80%;
+}
+.w90 {
+  width: 90%;
+}
+.c-red {
+  color: red;
+}
+.c-blue {
+  color: blue;
+}
+.c-green {
+  color: green;
+}
+.c-pink {
+  color: pink;
+}
+.c0 {
+  color: #000;
+}
+.c3 {
+  color: #333;
+}
+.c6 {
+  color: #666;
+}
+.c9 {
+  color: #999;
+}
+.cf {
+  color: #fff;
+}
+.fwb {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  border: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width:320px) and (max-width:359.9px){ html{font-size:85px;} }

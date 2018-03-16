@@ -6,6 +6,7 @@ const Home = resolve => require(['@/pages/Home.vue'], resolve)
 const My = resolve => require(['@/pages/My.vue'], resolve)
 const FirstIn = resolve => require(['@/pages/FirstIn.vue'], resolve)
 const MiddlewarePage = resolve => require(['@/pages/MiddlewarePage.vue'], resolve)
+const Login = resolve => require(['@/pages/Login.vue'], resolve)
 
 Vue.use(Router)
 const routes = [
@@ -19,7 +20,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'home'
+      title: '主页'
     }
   },
   {
@@ -27,7 +28,7 @@ const routes = [
     name: 'My',
     component: My,
     meta: {
-      title: 'my'
+      title: '我的'
     }
   },
   {
@@ -35,7 +36,15 @@ const routes = [
     name: 'FirstIn',
     component: FirstIn,
     meta: {
-      title: 'FirstIn'
+      title: '欢迎您'
+    }
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login,
+    meta: {
+      title: '登录'
     }
   }
 ]

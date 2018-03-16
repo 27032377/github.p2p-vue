@@ -6,6 +6,12 @@ const actions = {
       type: types.CHANGE_LOADING,
       bol: payload.bol
     })
+  },
+  [types.PAGE_HEIGHT] ({commit}, payload) {
+    commit({
+      type: types.PAGE_HEIGHT,
+      num: payload.num
+    })
   }
 }
 
