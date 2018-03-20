@@ -17,29 +17,29 @@ html {
   width: 100%;
   height: 100%;
 }
-.mr20 {
-  margin-right: 20px;
+.mr5 {
+  margin-right: .05rem;
 }
-.mt20 {
-  margin-top: 20px;
+.mt5 {
+  margin-top: .05rem;
 }
-.ml20 {
-  margin-left: 20px;
+.ml5 {
+  margin-left: .05rem;
 }
-.mb20 {
-  margin-bottom: 20px;
+.mb5 {
+  margin-bottom: .05rem;
 }
-.pr20 {
-  padding-right: 20px;
+.pr5 {
+  padding-right: .05rem;
 }
-.pt20 {
-  padding-top:20px;
+.pt5 {
+  padding-top: .05rem;
 }
-.pl20 {
-  padding-left: 20px;
+.pl5 {
+  padding-left: .05rem;
 }
-.pb20 {
-  padding-bottom: 20px;
+.pb5 {
+  padding-bottom: .05rem;
 }
 .fl {
   float: left;
@@ -54,6 +54,15 @@ html {
   content: '';
   display: block;
   clear: both;
+}
+.fs12 {
+  font-size: 12px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs16 {
+  font-size: 16px;
 }
 .w10 {
   width: 10%;
@@ -93,6 +102,12 @@ html {
 }
 .c-pink {
   color: pink;
+}
+.c-main {
+  color: #FF6600;
+}
+.c-back {
+  color: #0000CC;
 }
 .c0 {
   color: #000;
