@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <s-home></s-home>
+    <s-home v-show="selected == '首页'"></s-home>
+    <s-project v-show="selected == '项目'"></s-project>
     <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="首页">
         <img slot="icon" :src="homeImg" />
@@ -24,6 +25,7 @@
 <script>
 import { Tabbar, TabItem, TabContainer } from 'mint-ui'
 import SHome from '../components/SHome.vue'
+import SProject from '../components/SProject.vue'
 import 'mint-ui/lib/style.min.css'
 import iHome from '../assets/images/icon/icon-home.png'
 import iHomeS from '../assets/images/icon/icon-home-s.png'
@@ -40,7 +42,8 @@ export default {
     Tabbar,
     TabItem,
     TabContainer,
-    SHome
+    SHome,
+    SProject
   },
   data () {
     return {

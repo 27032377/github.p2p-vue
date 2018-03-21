@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/media': {
+        target: '10.118.17.107', // 换成正确的服务器域名
+        changeOrigin: true,
+        pathRewrite: {
+          '^/media': '/media'
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

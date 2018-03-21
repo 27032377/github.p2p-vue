@@ -72,6 +72,44 @@
           <p class="c9">累计注册人数</p>
         </div>
       </div>
+      <div class="intro2">
+        <div class="w30 a-box">
+          <p class="fs14 fwb mb5">多重保障</p>
+          <p>银行资金存管</p>
+        </div>
+        <div class="w30 b-box">
+          <p class="fs14 fwb mb5">企业荣誉</p>
+          <p>合规性位居前列</p>
+        </div>
+        <div class="w30 c-box">
+          <p class="fs14 fwb mb5">业绩报告</p>
+          <p>7年稳健运营</p>
+        </div>
+      </div>
+      <div class="intro3">
+        <div class="w30">
+          <div class="mb5">
+            <img class="w100" src="../assets/images/icon/icon-building.png" />
+          </div>
+          <p>关于人人贷</p>
+        </div>
+        <div class="w30">
+          <div class="mb5">
+            <img class="w100" src="../assets/images/icon/icon-file.png" />
+          </div>
+          <p>信息披露</p>
+        </div>
+        <div class="w30">
+          <div class="mb5">
+            <img class="w100" src="../assets/images/icon/icon-scholar.png" />
+          </div>
+          <p>投资者教育</p>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-box">
+      <p>期待回报不代表对实际利息回报的承诺，</p>
+      <p>网贷有风险，出借需谨慎</p>
     </section>
     <section class="f-box"></section>
     <fix-til v-show="tilShow" title="人人贷">
@@ -81,8 +119,8 @@
 </template>
 <script>
 import {Swipe, SwipeItem} from 'mint-ui'
-import MMore from '../components/MMore.vue'
-import FixTil from '../components/FixTil.vue'
+import MMore from './MMore.vue'
+import FixTil from './FixTil.vue'
 import 'mint-ui/lib/style.min.css'
 
 export default {
@@ -185,7 +223,7 @@ export default {
     .b-line {
       width: 100%;
       height: .1rem;
-      background: #ddd;
+      background: #eee;
     }
     .notice {
       height: .4rem;
@@ -209,6 +247,40 @@ export default {
         display: flex;
         margin-bottom: .1rem;
       }
+      .intro2 {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: .1rem;
+        .a-box {
+          .n-box;
+          background-color: #3366FF;
+        }
+        .b-box {
+          .n-box;
+          background-color: #0033FF;
+        }
+        .c-box {
+          .n-box;
+          background-color: #FF9933;
+        }
+      }
+      .intro3 {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .n-box {
+        padding: .2rem 0;
+        color: #fff;
+        border-radius: 2px;
+      }
+    }
+    .bottom-box {
+      padding: .1rem;
+      background-color: #eee;
+      color: #999;
+      text-align: center;
     }
   }
 </style>
