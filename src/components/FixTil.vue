@@ -14,7 +14,8 @@ export default {
       type: String,
       default: ''
     }
-  }
+  },
+  methods: {}
 }
 </script>
 <style lang="less">
@@ -25,7 +26,7 @@ export default {
     top: 0;
     z-index: 1;
     text-align: center;
-    background-color: #0000CC;
+    background-color: #0e4787;
     color: #fff;
     font-size: 14px;
     height: .4rem;

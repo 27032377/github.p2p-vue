@@ -103,11 +103,14 @@ html {
 .c-pink {
   color: pink;
 }
+.c-orange {
+  color: #FF6600;
+}
 .c-main {
   color: #FF6600;
 }
 .c-back {
-  color: #0000CC;
+  color: #0e4787;
 }
 .c0 {
   color: #000;
@@ -138,6 +141,23 @@ html {
 }
 .pf {
   position: fixed;
+}
+.flex-bet-cen {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+}
+.bbd {
+  border-bottom:1px solid #ddd;
+}
+.dpf {
+  display: flex;
+}
+.dpi {
+  display: inline-block;
+}
+.bsb {
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;

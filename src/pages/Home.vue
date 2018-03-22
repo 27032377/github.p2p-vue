@@ -2,6 +2,11 @@
   <div class="home">
     <s-home v-show="selected == '首页'"></s-home>
     <s-project v-show="selected == '项目'"></s-project>
+    <section class="bottom-box">
+      <p>期待回报不代表对实际利息回报的承诺，</p>
+      <p>网贷有风险，出借需谨慎</p>
+    </section>
+    <section class="f-box"></section>
     <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="首页">
         <img slot="icon" :src="homeImg" />
@@ -80,19 +85,31 @@ export default {
       }
     }
   },
-  methods: {}
+  methods: {
+  }
 }
 </script>
 <style lang="less" scoped>
   .home {
     .is-selected {
-      color: #0000CC !important;
+      color: #0e4787 !important;
     }
     .mint-tab-item {
       background-color: #fff !important;
     }
     .mint-tab-item {
       border-top: 1px solid #999;
+    }
+    .f-box {
+      height: .56rem;
+      width: 100%;
+      background-color: #eee;
+    }
+    .bottom-box {
+      padding: .1rem;
+      background-color: #eee;
+      color: #999;
+      text-align: center;
     }
   }
 </style>

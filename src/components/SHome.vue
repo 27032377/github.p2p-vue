@@ -107,11 +107,6 @@
         </div>
       </div>
     </section>
-    <section class="bottom-box">
-      <p>期待回报不代表对实际利息回报的承诺，</p>
-      <p>网贷有风险，出借需谨慎</p>
-    </section>
-    <section class="f-box"></section>
     <fix-til v-show="tilShow" title="人人贷">
       <img slot="bell" src="../assets/images/icon/icon-bell.png" alt="">
     </fix-til>
@@ -142,7 +137,8 @@ export default {
       let top = document.body.scrollTop
       this.tilShow = top > 10
     }, false)
-  }
+  },
+  methods: {}
 }
 </script>
 <style lang="less">
@@ -237,10 +233,6 @@ export default {
       border-bottom: 1px solid #ddd;
       text-align: center;
     }
-    .f-box {
-      height: .6rem;
-      width: 100%;
-    }
     .intro-box {
       padding: .1rem;
       .intro1 {
@@ -275,12 +267,6 @@ export default {
         color: #fff;
         border-radius: 2px;
       }
-    }
-    .bottom-box {
-      padding: .1rem;
-      background-color: #eee;
-      color: #999;
-      text-align: center;
     }
   }
 </style>
