@@ -1,5 +1,5 @@
 <template>
-  <div>薪计划</div>
+  <div>//薪计划</div>
 </template>
 <script>
 export default {
