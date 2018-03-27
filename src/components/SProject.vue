@@ -6,14 +6,17 @@
       <mt-tab-item id="散标">散标</mt-tab-item>
       <mt-tab-item id="债权">债权</mt-tab-item>
     </mt-navbar>
+    <div style="height: 44px;width: 100%;"></div>
     <u-plan v-show="selected == 'U计划'"></u-plan>
     <p-salary v-show="selected == '薪计划'"></p-salary>
+    <p-disperse v-show="selected == '散标'"></p-disperse>
   </div>
 </template>
 <script>
 import { Navbar, TabItem } from 'mint-ui'
 import UPlan from './UPlan.vue'
 import PSalary from './PSalary.vue'
+import PDisperse from './PDisperse.vue'
 import 'mint-ui/lib/style.min.css'
 
 export default {
@@ -22,7 +25,8 @@ export default {
     Navbar,
     TabItem,
     UPlan,
-    PSalary
+    PSalary,
+    PDisperse
   },
   data () {
     return {

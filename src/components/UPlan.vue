@@ -98,7 +98,6 @@ export default {
 </script>
 <style lang="less" scoped>
   .u-plan {
-    padding-top: .46rem;
     .til-box {
       padding: .1rem;
       display: flex;
