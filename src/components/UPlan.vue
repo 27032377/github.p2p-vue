@@ -31,6 +31,7 @@
       :rate="item.rate"
       :add="item.add"
       :full="item.full"
+      @click.native="popShow"
     ></u-box>
   </div>
 </template>
@@ -93,6 +94,11 @@ export default {
       }
     })
     this.uList = uList
+  },
+  methods: {
+    popShow () {
+      this.$popupShow('点击')
+    }
   }
 }
 </script>

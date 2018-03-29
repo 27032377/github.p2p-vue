@@ -107,7 +107,7 @@
         </div>
       </div>
     </section>
-    <footer-intro></footer-intro>
+    <footer-intro @click.native="showPicker"></footer-intro>
     <fix-til v-show="tilShow" title="人人贷">
       <img slot="bell" src="../assets/images/icon/icon-bell.png" alt="">
     </fix-til>
@@ -141,7 +141,11 @@ export default {
       this.tilShow = top > 10
     }, false)
   },
-  methods: {}
+  methods: {
+    showPicker () {
+      this.$showPicker()
+    }
+  }
 }
 </script>
 <style lang="less">
