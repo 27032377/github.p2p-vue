@@ -18,6 +18,12 @@ const actions = {
       type: types.MY_TOAST,
       obj: payload.obj
     })
+  },
+  [types.TURN_FOOT] ({commit}, payload) {
+    commit({
+      type: types.TURN_FOOT,
+      bol: payload.bol
+    })
   }
 }
 

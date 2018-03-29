@@ -13,7 +13,8 @@ const store = new Vuex.Store({
       show: false,
       message: '加载中...',
       position: 'middle'
-    }
+    },
+    footSwi: true
   },
   getters: {},
   mutations,

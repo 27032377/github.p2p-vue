@@ -107,6 +107,7 @@
         </div>
       </div>
     </section>
+    <footer-intro></footer-intro>
     <fix-til v-show="tilShow" title="人人贷">
       <img slot="bell" src="../assets/images/icon/icon-bell.png" alt="">
     </fix-til>
@@ -116,6 +117,7 @@
 import {Swipe, SwipeItem} from 'mint-ui'
 import MMore from './MMore.vue'
 import FixTil from './FixTil.vue'
+import FooterIntro from './FooterIntro.vue'
 import 'mint-ui/lib/style.min.css'
 
 export default {
@@ -124,7 +126,8 @@ export default {
     Swipe,
     SwipeItem,
     MMore,
-    FixTil
+    FixTil,
+    FooterIntro
   },
   data () {
     return {

@@ -17,7 +17,7 @@
         </div>
       </div>
     </section>
-    <section class="list-box">
+    <section class="list-box" ref="list">
       <disperse-box
         v-for="(item, index) in detailList"
         :key="index"
@@ -83,7 +83,7 @@ let details = [
     percent: 10.2,
     time: 36,
     localBol: true,
-    fullBol: true,
+    fullBol: false,
     index: 5
   },
   {
@@ -98,7 +98,7 @@ let details = [
     useFor: '日常生活消费',
     percent: 9.6,
     time: 36,
-    localBol: true,
+    localBol: false,
     fullBol: true,
     index: 7
   },
@@ -138,7 +138,46 @@ export default {
       detailList: details
     }
   },
-  computed: {},
+  mounted () {
+    const list = this.$refs.list
+    // let start
+    list.addEventListener('touchstart', e => {
+      // start = e.targetTouches[0].pageY
+    }, false)
+    list.addEventListener('touchmove', e => {
+      let height = list.scrollHeight
+      let diff = document.body.scrollTop
+      console.log(height, diff)
+      if (diff > (height / 2.5)) {
+        details.push(
+          {
+            useFor: '扩大生产/经营',
+            percent: 9.6,
+            time: 36,
+            localBol: true,
+            fullBol: true,
+            index: 10
+          },
+          {
+            useFor: '扩大生产/经营',
+            percent: 9.6,
+            time: 36,
+            localBol: true,
+            fullBol: true,
+            index: 11
+          },
+          {
+            useFor: '扩大生产/经营',
+            percent: 9.6,
+            time: 36,
+            localBol: true,
+            fullBol: true,
+            index: 12
+          }
+        )
+      }
+    }, false)
+  },
   methods: {
     complexClick () {
       this.reset()
@@ -173,7 +212,7 @@ export default {
         this.imgTwoUp = upN
         this.imgTwoDown = downY
         this.imgTwoSwi = false
-        details.sort((a, b) => a.time > b.time)
+        details.sort((a, b) => a.time < b.time)
       }
     },
     reset () {
@@ -201,6 +240,8 @@ export default {
       align-items: center;
       height: 40px;
       border-bottom: 1px solid #eee;
+      background-color: #fff;
+      z-index: 10;
     }
     .list-box {
       margin-top: 44px;

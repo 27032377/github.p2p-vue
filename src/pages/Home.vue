@@ -2,10 +2,6 @@
   <div class="home">
     <s-home v-show="selected == '首页'"></s-home>
     <s-project v-show="selected == '项目'"></s-project>
-    <section class="bottom-box">
-      <p>期待回报不代表对实际利息回报的承诺，</p>
-      <p>网贷有风险，出借需谨慎</p>
-    </section>
     <section class="f-box"></section>
     <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="首页">

@@ -9,6 +9,9 @@ const mutations = {
   },
   [types.MY_TOAST] (state, payload) {
     state.myToast = payload.obj
+  },
+  [types.TURN_FOOT] (state, payload) {
+    state.footSwi = payload.bol
   }
 }
 

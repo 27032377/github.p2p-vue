@@ -10,6 +10,7 @@
     <u-plan v-show="selected == 'U计划'"></u-plan>
     <p-salary v-show="selected == '薪计划'"></p-salary>
     <p-disperse v-show="selected == '散标'"></p-disperse>
+    <footer-intro v-show="footSwi"></footer-intro>
   </div>
 </template>
 <script>
@@ -17,7 +18,9 @@ import { Navbar, TabItem } from 'mint-ui'
 import UPlan from './UPlan.vue'
 import PSalary from './PSalary.vue'
 import PDisperse from './PDisperse.vue'
+import FooterIntro from './FooterIntro.vue'
 import 'mint-ui/lib/style.min.css'
+import {mapState} from 'vuex'
 
 export default {
   name: 'SProject',
@@ -26,11 +29,43 @@ export default {
     TabItem,
     UPlan,
     PSalary,
-    PDisperse
+    PDisperse,
+    FooterIntro
   },
   data () {
     return {
       selected: 'U计划'
+    }
+  },
+  computed: {
+    ...mapState({
+      footSwi: state => state.footSwi
+    })
+  },
+  watch: {
+    selected (val) {
+      switch (val) {
+        case 'U计划':
+          this.$store.dispatch({
+            type: 'TURN_FOOT',
+            bol: true
+          })
+          break
+        case '薪计划':
+        case '散标':
+        case '债权':
+          this.$store.dispatch({
+            type: 'TURN_FOOT',
+            bol: false
+          })
+          break
+        default:
+          this.$store.dispatch({
+            type: 'TURN_FOOT',
+            bol: true
+          })
+          break
+      }
     }
   }
 }
