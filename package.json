@@ -2,7 +2,7 @@
   "name": "github.p2p-vue",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "80002755 <80002755@sf-express.com>",
+  "author": "27032377",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -13,6 +13,10 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
+  "keywords": [
+    "Vue",
+    "js"
+  ],
   "dependencies": {
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
